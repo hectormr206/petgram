@@ -2,14 +2,14 @@ import styled from 'styled-components'
 import { fadeIn } from '../../styles/animation'
 
 export const ImgWrapper = styled.div`
-${fadeIn({ time: '1.2s' })}
- border-radius: 10px;
- display: block;
- height: 0;
- overflow: hidden;
- padding: 56.25% 0 0 0;
- position: relative;
- width: 100%;
+  border-radius: 10px;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  padding: 56.25% 0 0 0;
+  position: relative;
+  width: 100%;
+  ${fadeIn({ time: '.5s' })}
 `
 
 export const Img = styled.img`
