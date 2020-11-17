@@ -1,6 +1,6 @@
 # Petgram ⚛️
 
-Application to upload and share photos of pets using Webpack, GraphQL, React Hooks, React Router, SEO, PWAs and Vercel.
+Application to upload and share photos of pets using Webpack, Babel, GraphQL, React Hooks, React Router, SEO, PWAs and Vercel.
 
 ## 🚀 Getting Started
 
