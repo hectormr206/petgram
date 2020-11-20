@@ -1,7 +1,5 @@
 {
   "version": 2,
-  "name": "petgram-server-hectormr206",
-  "alias": ["petgram-api-hectormr206"],
   "builds": [{ "src": "index.js", "use": "@vercel/node" }],
   "routes": [{
     "headers": {
