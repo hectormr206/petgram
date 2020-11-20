@@ -13,7 +13,8 @@ export const App = () => {
 
   const renderSinglePhoto = (data, loading, error) => {
     if (loading) return <p>Loading...</p>
-    if (error) return <p>Error...</p>
+    if (error) return <p>Error!</p>
+
     const { photo = {} } = data
     return <PhotoCard {...photo} />
   }
