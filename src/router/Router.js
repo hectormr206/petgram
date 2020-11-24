@@ -5,7 +5,7 @@ import { Home } from '../pages/Home'
 import { Detail } from '../pages/Detail'
 import { PrivateRoute } from './PrivateRoute'
 
-const isAuth = true
+import Context from '../Context'
 
 export const Route = () => (
   <>
@@ -14,6 +14,10 @@ export const Route = () => (
       <Home path='/pet/:categoryId' />
       <Detail path='/detail/:detailId' />
     </Router>
-    <PrivateRoute isAuth={isAuth} />
+    <Context.Consumer>
+      {
+        ({ isAuth }) => <PrivateRoute isAuth={isAuth} />
+      }
+    </Context.Consumer>
   </>
 )

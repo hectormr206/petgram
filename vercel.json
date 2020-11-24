@@ -1,7 +1,5 @@
 {
   "version": 2,
-  "name": "petgram-hectormr206",
-  "alias": ["petgram-frontend-hectormr206"],
   "builds": [{ "src": "package.json", "use": "@vercel/static-build" }],
   "routes": [
     {
