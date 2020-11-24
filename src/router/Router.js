@@ -11,8 +11,8 @@ export const Route = () => (
   <>
     <Router>
       <Home path='/' />
-      <Home path='/pet/:id' />
-      <Detail path='/detail/:id' />
+      <Home path='/pet/:categoryId' />
+      <Detail path='/detail/:detailId' />
     </Router>
     <PrivateRoute isAuth={isAuth} />
   </>

@@ -8,7 +8,14 @@ module.exports = {
     historyApiFallback: {
       disableDotRule: true
     },
-    liveReload: true
+    hot: true,
+    liveReload: true,
+    open: false,
+    port: 8080
+  },
+  performance: {
+    maxEntrypointSize: 1024000,
+    maxAssetSize: 1024000
   },
   plugins: [
     new HtmlWebpackPlugin({

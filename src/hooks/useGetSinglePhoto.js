@@ -1,8 +1,8 @@
 import { gql, useQuery } from '@apollo/client'
 
 const GET_SINGLE_PHOTO = gql`
-  query getSinglePhoto($id: ID!) {
-    photo(id: $id) {
+  query getSinglePhoto($id:ID!) {
+    photo(id:$id) {
       id
       categoryId
       src
