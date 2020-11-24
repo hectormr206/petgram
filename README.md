@@ -2,6 +2,10 @@
 
 Application to upload and share photos of pets using Webpack, Babel, GraphQL, React Hooks, React Router, SEO, PWAs and Vercel.
 
+🟢 **Live Frontend:** [https://petgram-hectormr206.vercel.app/](https://petgram-hectormr206.vercel.app/)
+
+🟢 **Live Backend:** [https://petgram-server-hectormr206.vercel.app/graphql](https://petgram-server-hectormr206.vercel.app/graphql)
+
 ## 🚀 Getting Started
 
 ### 🟡 Pre-requirements
