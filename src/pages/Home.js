@@ -12,6 +12,6 @@ const HomeComponent = ({ categoryId }) => {
   )
 }
 
-export const Home = React.memo(HomeComponent, (prevProps, props) => {
+export default React.memo(HomeComponent, (prevProps, props) => {
   return prevProps.categoryId === props.categoryId
 })

@@ -1,14 +1,14 @@
 import React, { useContext } from 'react'
 import { Router, Redirect } from '@reach/router'
 
-import { NotFound } from '../pages/NotFound'
-import { Home } from '../pages/Home'
-import { Detail } from '../pages/Detail'
-import { NotRegisteredUser } from '../pages/NotRegisteredUser'
-import { Favs } from '../pages/Favs'
-import { User } from '../pages/User'
-
 import { Context } from '../Context'
+
+const NotFound = React.lazy(() => import('../pages/NotFound'))
+const Home = React.lazy(() => import('../pages/Home'))
+const Detail = React.lazy(() => import('../pages/Detail'))
+const NotRegisteredUser = React.lazy(() => import('../pages/NotRegisteredUser'))
+const Favs = React.lazy(() => import('../pages/Favs'))
+const User = React.lazy(() => import('../pages/User'))
 
 export const Route = () => {
   const { isAuth } = useContext(Context)

@@ -3,7 +3,7 @@ import { PhotoCard } from '../components/PhotoCard'
 import { useGetSinglePhoto } from '../hooks/useGetSinglePhoto'
 import { Layout } from '../components/Layout'
 
-export const Detail = ({ detailId }) => {
+export default ({ detailId }) => {
   const { data, loading, error } = useGetSinglePhoto(detailId)
 
   if (loading) return <p>Loading...</p>
