@@ -4,9 +4,11 @@
   "description": "Platzi Peat",
   "main": "index.js",
   "scripts": {
+    "now-build": "npm run build",
     "build": "webpack",
     "lint": "standard",
-    "dev": "webpack serve"
+    "dev": "webpack serve",
+    "serve:dev": "webpack --mode development && npx serve dist -s"
   },
   "repository": {
     "type": "git",
