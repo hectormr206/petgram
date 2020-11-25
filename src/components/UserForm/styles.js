@@ -22,19 +22,6 @@ export const Input = styled.input`
   }
 `
 
-export const Button = styled.button`
-  display: block;
-  width: 100%;
-  height: 32px;
-  text-align: center;
-  background: #8d00ff;
-  color: #fff;
-  border-radius: 3px;
-  &[disabled] {
-    opacity: .26;
-  }
-`
-
 export const Error = styled.span`
   font-size: 14px;
   color: red;
