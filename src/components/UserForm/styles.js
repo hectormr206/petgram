@@ -17,6 +17,9 @@ export const Input = styled.input`
   width: 100%;
   border: 1px solid #ccc;
   border-radius: 3px;
+  &[disabled] {
+    opacity: .26;
+  }
 `
 
 export const Button = styled.button`
@@ -27,4 +30,12 @@ export const Button = styled.button`
   background: #8d00ff;
   color: #fff;
   border-radius: 3px;
+  &[disabled] {
+    opacity: .26;
+  }
+`
+
+export const Error = styled.span`
+  font-size: 14px;
+  color: red;
 `

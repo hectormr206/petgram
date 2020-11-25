@@ -4,7 +4,7 @@ import { UserForm } from '../components/UserForm'
 import { useRegisterMutation } from '../hooks/useRegisterMutation'
 
 export const NotRegisteredUser = () => {
-  const { registerMutation } = useRegisterMutation()
+  const { registerMutation, data, loading, error } = useRegisterMutation()
 
   return (
     <Context.Consumer>
@@ -15,9 +15,12 @@ export const NotRegisteredUser = () => {
             const variables = { input }
             registerMutation({ variables }).then(activateAuth)
           }
+
+          const errorMsg = error && 'El usuario ya existe o hay algún problema.'
+
           return (
             <>
-              <UserForm onSubmit={onSubmit} title='Registrate' />
+              <UserForm onSubmit={onSubmit} error={errorMsg} title='Registrate' disabled={loading} />
               <UserForm onSubmit={activateAuth} title='Iniciar sesión' />
             </>
           )
