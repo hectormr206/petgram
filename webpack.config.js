@@ -27,7 +27,6 @@ module.exports = {
       template: 'src/index.html'
     }),
     new WebpackPwaManifestPlugin({
-      filename: 'manifest.webmanifest',
       name: 'Petgram - Tu app de fotos de mascotas',
       shortname: 'Petgram 🐶',
       description: 'Con Petgram puedes encontrar fotos de animales domésticos muy fácilmente',
