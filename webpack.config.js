@@ -30,26 +30,17 @@ module.exports = {
       name: 'Petgram - Tu app de fotos de mascotas',
       shortname: 'Petgram 🐶',
       description: 'Con Petgram puedes encontrar fotos de animales domésticos muy fácilmente',
-      orientation: 'portrait',
-      display: 'standalone',
-      start_url: '/',
-      scope: '/',
       background_color: '#fff',
       theme_color: '#b1a',
       icons: [
         {
           src: path.resolve('src/assets/icon.png'),
           sizes: [96, 128, 192, 256, 384, 512],
-          destination: path.join('Icons'),
           ios: true
         }
       ]
     }),
     new WorkboxWebpackPlugin.GenerateSW({
-      swDest: 'service-worker.js',
-      clientsClaim: true,
-      skipWaiting: true,
-      maximumFileSizeToCacheInBytes: 5000000,
       runtimeCaching: [
         {
           urlPattern: new RegExp(
